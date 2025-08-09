@@ -9,21 +9,28 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa;
     color: #333;
 }
 
 /* Encabezado */
 header {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #00A3E0; /* Color azul similar al de Cleanzy */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
 nav ul li {
@@ -32,34 +39,42 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
-/* Sección de inicio */
-#home {
+/* Sección principal (Hero) */
+.hero {
     text-align: center;
-    padding: 50px 20px;
-    background-color: #fff;
+    padding: 80px 20px;
+    background-color: #00A3E0; /* Mismo color azul */
+    color: white;
 }
 
-#home h1 {
+.hero h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
-#home p {
+.hero p {
     font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
 .cta-button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: #fff;
+    color: #00A3E0;
+    padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.cta-button:hover {
+    background-color: #007B8F;
+    color: #fff;
 }
 
 /* Sección de servicios */
@@ -72,6 +87,7 @@ nav ul li a {
 #services h2 {
     font-size: 2rem;
     margin-bottom: 30px;
+    color: #00A3E0;
 }
 
 .service {
@@ -90,13 +106,14 @@ nav ul li a {
 /* Sección de sobre nosotros */
 #about {
     padding: 50px 20px;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
     text-align: center;
 }
 
 #about h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    color: #00A3E0;
 }
 
 #about p {
@@ -115,6 +132,7 @@ nav ul li a {
 #contact h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    color: #00A3E0;
 }
 
 form {
@@ -139,7 +157,7 @@ form textarea {
 }
 
 form button {
-    background-color: #007bff;
+    background-color: #00A3E0;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -149,7 +167,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #0056b3;
+    background-color: #007B8F;
 }
 
 /* Pie de página */
