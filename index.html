@@ -3,30 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cleanufficio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Vinculamos el archivo CSS -->
+    <title>Mi Servicio de Limpieza</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenidos a Mi Página Web</h1>
-        <p>Este es un ejemplo básico para entender cómo crear una página web.</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section id="home">
-        <h2>Sección de Inicio</h2>
-        <p>Esta es la sección de inicio donde puedes poner información de bienvenida.</p>
-        <button id="clickButton">Haz clic aquí</button>
+        <h1>Bienvenidos a Nuestro Servicio de Limpieza</h1>
+        <p>Ofrecemos soluciones de limpieza eficientes y confiables para tu hogar o negocio.</p>
+        <a href="#contact" class="cta-button">Solicita una Cotización</a>
+    </section>
+
+    <section id="services">
+        <h2>Servicios</h2>
+        <div class="service">
+            <h3>Limpieza Residencial</h3>
+            <p>Servicios de limpieza profunda para tu hogar.</p>
+        </div>
+        <div class="service">
+            <h3>Limpieza Comercial</h3>
+            <p>Soluciones de limpieza para oficinas y comercios.</p>
+        </div>
+        <div class="service">
+            <h3>Limpieza Post-Obra</h3>
+            <p>Eliminación de residuos y limpieza después de renovaciones.</p>
+        </div>
     </section>
 
     <section id="about">
-        <h2>Sobre mí</h2>
-        <p>Aquí puedes agregar información sobre ti, tu negocio, o cualquier otro tema.</p>
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una empresa con años de experiencia en el sector de la limpieza, comprometidos con la calidad y la satisfacción del cliente.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
     </section>
 
     <footer>
-        <p>&copy; 2025 Mi Página Web</p>
+        <p>&copy; 2025 Mi Servicio de Limpieza</p>
     </footer>
 
-    <script src="script.js"></script> <!-- Vinculamos el archivo JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
